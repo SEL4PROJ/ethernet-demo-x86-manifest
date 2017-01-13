@@ -14,11 +14,11 @@
 
 <manifest>
     <remote name="seL4"
-        fetch="ssh://git@bitbucket.keg.ertos.in.nicta.com.au:7999/sel4/"
+        fetch="../seL4"
     />
 
     <remote name="SEL4PROJ"
-        fetch="ssh://git@bitbucket.keg.ertos.in.nicta.com.au:7999/sel4proj/"
+        fetch="../SEL4PROJ"
     />
 
     <!-- default revision for each project, and name of the remote -->
