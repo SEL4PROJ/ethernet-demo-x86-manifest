@@ -80,14 +80,15 @@
 
     <project remote="SEL4PROJ" name="global-components.git" path="components"/>
 
+    <project name="camkes-vm.git" path="projects/vm">
+        <linkfile src="liblwip" dest="libs/liblwip"/>
+    </project>
+
     <project remote="SEL4PROJ" name="camkes-apps-ethernet-demo-x86--devel.git" path="projects/ethernet-demo">
         <linkfile src="Kconfig" dest="Kconfig"/>
         <linkfile src="configs" dest="configs"/>
         <linkfile src="ethernet-demo-app" dest="apps/ethernet-demo"/>
-    </project>
-
-    <project name="camkes-vm.git" path="projects/vm">
-        <linkfile src="liblwip" dest="libs/liblwip"/>
+        <linkfile src="lwipopts.h" dest="projects/vm/liblwip/include/lwip/lwipopts.h"/>
     </project>
 
 </manifest>
